@@ -11,5 +11,5 @@ function TV(input){
         }else{
                 console.log(`You don't have enough time to watch ${tvName}, you need ${Math.ceil(episodeLength - timeLeft)} more minutes.`);
         }
-
+// by ZenSamurai
 }
