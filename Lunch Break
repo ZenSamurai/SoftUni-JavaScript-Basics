@@ -1,0 +1,15 @@
+function TV(input){
+        tvName = input[0]
+        episodeLength = Number(input[1])
+        lBreak = Number(input[2])
+        lunch = lBreak / 4
+        relax = lBreak / 8
+        timeLeft = lBreak - lunch - relax
+
+        if(timeLeft >= episodeLength){
+                console.log(`You have enough time to watch ${tvName} and left with ${Math.ceil(timeLeft - episodeLength)} minutes free time.`);
+        }else{
+                console.log(`You don't have enough time to watch ${tvName}, you need ${Math.ceil(episodeLength - timeLeft)} more minutes.`);
+        }
+
+}
